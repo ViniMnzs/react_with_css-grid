@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+  background-color: #008B8B	;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root{
+  display: grid;
+  grid-template: 10vh 80vh 10vh/3fr 2fr;
+  grid-template-areas: 
+  "h h"
+  "ml mr"
+  "f f"
+  ;
+}
+#header{
+  grid-area:h;
+}
+#mid-left{
+  grid-area:ml;
+}
+#mid-right{
+  grid-area:mr;
+}
+#footer{
+  grid-area:f;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
